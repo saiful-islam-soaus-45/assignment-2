@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Assignment-2</title>
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
     <header>
@@ -14,16 +15,16 @@
             </h1>
 
             <nav>
-                <ul class="flex gap-7 text-amber-50">
+                <ul class="flex gap-7 text-amber-50 cursor-pointer">
                     <li>About</li>
                     <li>Episodes</li>
                     <li>Host</li>
                 </ul>
             </nav>
-            <button class="text-amber-50 w-40 h-10 rounded-2xl bg-gradient-to-r from-pink-500 via-purple-500 to-yellow-400 font-bold">Subscribe</button>
+            <button class="text-amber-50 w-40 h-10 rounded-2xl bg-gradient-to-r from-pink-500 via-purple-500 to-yellow-400 font-bold cursor-pointer">Subscribe <i class="fa-solid fa-arrow-right"></i></button>
         </section>
                 <!-- hidden bar for mobile -->
-        <section class="  flex sm:hidden justify-around items-center border-4 bg-[#1A0B2E] h-20">
+        <section class="  flex sm:hidden justify-around items-center bg-[#1A0B2E] h-20">
            <h1 class="text-amber-50 font-extrabold text-2xl sm:font-extrabold sm:text-4xl">Tech<span class="bg-gradient-to-r from-pink-500 via-purple-500 to-yellow-400 bg-clip-text text-transparent">Wave</span>
             </h1>
             <img src="assets/hamburger-menu.png" alt="">
@@ -35,19 +36,25 @@
         <div class="relative">
             <img class="w-full h-[446px] sm:w-full sm:h-[600px]" src="assets/hero-bg.png" alt="">
             <div class="absolute -translate-y-95 -translate-x-1 sm:-translate-y-150 top-50% sm:translate-x-126  banner content">
-                <div class=" circle flex items-center justify-center" >
+                <div class=" relative circle flex items-center justify-center" >
                     <img class="h-[130px] sm:h-[310px]" src="assets/hero-circle.png" alt="">
                     <div class="absolute mike">
                         <img class="h-[40px] sm:h-[150px]" src="assets/microphone.png" alt="">
                     </div>
+                    
 
                 </div>
+                <!-- new -->
+                     <div class="absolute translate-x-60 -translate-y-32 sm:translate-x-78 sm:-translate-y-75">
+                      <p class=" text-gray-950 text-center rounded-2xl text-[15px] sm:font-bold w-[50px]  sm:w-[65px] bg-[#00FF88]">NEW</p>
+                     </div>
                 <div class="info sm:ml-1 flex flex-col justify-center items-center mt-10">
                     <p class="font-extrabold text-[30px] sm:text-5xl text-amber-50">TechWave</p>
                     <p class="mt-6 text-amber-50 text-center sm:text-cente">Your daily dose of tech insights, productivity hacks, and personal growth</p>
                     <div class=" flex flex-row gap-5 mt-6">
-                        <button class=" text-amber-50 h-[50px] w-[150px] sm:w-[250px] rounded-3xl bg-gradient-to-r from-pink-500 via-purple-500 to-yellow-400 font-bold">Listen on Spotify</button>
-                        <button class=" h-[50px] w-[150px] sm:w-[250px] rounded-3xl border-2 border-[#00FF88] font-bold text-[#00FF88]">Subscribe</button>
+                        <button class=" text-amber-50 h-[50px] w-[150px] sm:w-[250px] rounded-3xl bg-gradient-to-r from-pink-500 via-purple-500 to-yellow-400 font-bold cursor-pointer"><i class="fa-brands fa-stack-overflow"></i> Listen on Spotify</button>
+                        <button class=" h-[50px] w-[150px] sm:w-[250px] rounded-3xl border-2 border-[#00FF88] font-bold text-[#00FF88] cursor-pointer"><i class="fa-solid fa-envelope"></i> Subscribe</button>
+                         
                     </div>
             </div>
             </div>
@@ -75,7 +82,7 @@
                 </p>
              </div>
                 <!-- card -->
-             <div class="sm:mt-[100px] ml-9 grid grid-cols-2 gap-6 sm:gap-2 sm:grid sm:grid-cols-4 sm:ml-24">
+             <div class="sm:mt-[100px] ml-9 grid grid-cols-2 gap-6 sm:gap-2 sm:grid sm:grid-cols-4 sm:ml-44">
                 <div class="">
                     <p class="font-extrabold text-3xl text-[#00FF88]">150K+</p>
                     <p class="text-amber-50">Monthly Listeners</p>
@@ -137,9 +144,9 @@
      
 
      <section class="bg-[#1A0B2E] py-16 w-[385px] sm:w-[1200px]">
-     <h2 class="text-center sm:text-center text-white text-3xl font-bold mr-[200px] sm:ml-[100px] mb-12">
+     <div class="sm:ml-[290px]"><h2 class="text-center sm:text-center text-white text-3xl font-bold  mb-12">
         Featured Episodes
-      </h2>
+      </h2></div>
 
   <div class="max-w-6xl mr-20 sm:mr-0 mx-auto grid grid-cols-1  sm:grid-cols-3 gap-5 sm:gap-0 px-6">
 
@@ -163,7 +170,7 @@
         </p>
 
         <p class="text-green-400 text-sm flex items-center gap-1">
-          ● 42 min
+          <i class="fa-solid fa-alarm-clock"></i> 42 min
         </p>
       </div>
     </div>
@@ -187,7 +194,7 @@
         </p>
 
         <p class="text-green-400 text-sm">
-          ● 35 min
+          <i class="fa-solid fa-alarm-clock"></i> 35 min
         </p>
       </div>
     </div>
@@ -211,7 +218,7 @@
         </p>
 
         <p class="text-green-400 text-sm">
-          ● 51 min
+          <i class="fa-solid fa-alarm-clock"></i> 51 min
         </p>
       </div>
     </div>
@@ -255,10 +262,31 @@
 
       <!-- Social Icons -->
       <div class="flex gap-4 mt-2">
-        <img class="w-7 sm:w-8 " src="assets/linkedin.png" alt="">
-        <img class="w-7 sm:w-8" src="assets/x.png" alt="">
-        <img class="w-7 sm:w-8" src="assets/instagram.png" alt="">
-        <img class="w-7 sm:w-8" src="assets/youtube.png" alt="">
+        <!-- <ul class="flex flex-row gap-5">
+          <li><i class="fa-brands fa-linkedin bg-gradient-to-r from-pink-500 to-purple-500 bg-clip-text text-transparent"></i></li>
+          <li><i class="fa-brands fa-x-twitter"></i></li>
+          <li><i class="fa-brands fa-instagram"></i></li>
+          <li><i class="fa-brands fa-youtube"></i></li>
+        </ul> -->
+        <ul class="flex flex-row gap-5 items-center justify-center py-10">
+  
+  <li class="w-12 h-12 flex items-center justify-center rounded-full border border-gray-600 hover:border-purple-500 transition-all cursor-pointer">
+    <i class="fa-brands fa-linkedin-in text-xl bg-gradient-to-tr from-yellow-400 via-pink-500 to-purple-500 bg-clip-text text-transparent"></i>
+  </li>
+
+  <li class="w-12 h-12 flex items-center justify-center rounded-full border border-gray-600 hover:border-purple-500 transition-all cursor-pointer">
+    <i class="fa-brands fa-x-twitter text-xl bg-gradient-to-tr from-yellow-400 via-pink-500 to-purple-500 bg-clip-text text-transparent"></i>
+  </li>
+
+  <li class="w-12 h-12 flex items-center justify-center rounded-full border border-gray-600 hover:border-purple-500 transition-all cursor-pointer">
+    <i class="fa-brands fa-instagram text-xl bg-gradient-to-tr from-yellow-400 via-pink-500 to-purple-500 bg-clip-text text-transparent"></i>
+  </li>
+
+  <li class="w-12 h-12 flex items-center justify-center rounded-full border border-gray-600 hover:border-purple-500 transition-all cursor-pointer">
+    <i class="fa-brands fa-youtube text-xl bg-gradient-to-tr from-yellow-400 via-pink-500 to-purple-500 bg-clip-text text-transparent"></i>
+  </li>
+
+</ul>
       </div>
 
     </div>
