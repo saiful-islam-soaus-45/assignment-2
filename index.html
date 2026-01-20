@@ -101,7 +101,7 @@
             
         </section>
 
-        <div class="bg-[#230E3D]">
+        <div class="bg-[#1A0B2E] ">
             <p class="text-4xl text-amber-50 font-extrabold text-center">Why Choose TechWave</p>
             <div class="grid grid-cols-1 md:grid-cols-3 gap-6 bg-[#1a0b2e] p-10">
 
@@ -134,22 +134,12 @@
         <p class="font-bold text-2xl text-amber-50">Rich Resources</p>
         <p class="text-amber-50 mt-2">Access show notes, transcripts, and additional learning materials for every episode..</p>
      </div>
-     <!-- video -->
-     <!-- <div class="">
-        <p>Featured Episodes</p>
-        <div class="">
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/LcYv5lj_u-M?si=3_00WSEhpOx8l3R4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+     
 
-            <p>The Future of AI in Everyday Life</p>
-            <p>Exploring how artificial intelligence is <br> transforming our daily routines and what to <br> expect in the next decade.</p>
-            <p>42 min</p>
-        </div>
-     </div>  -->
-
-     <section class="bg-[#1A0B2E] py-16 w-[1200px]">
-  <h2 class="text-center sm:text-center text-white text-3xl font-bold ml-[100px] mb-12">
-    Featured Episodes
-  </h2>
+     <section class="bg-[#1A0B2E] py-16 w-[385px] sm:w-[1200px]">
+     <h2 class="text-center sm:text-center text-white text-3xl font-bold mr-[200px] sm:ml-[100px] mb-12">
+        Featured Episodes
+      </h2>
 
   <div class="max-w-6xl mr-20 sm:mr-0 mx-auto grid grid-cols-1  sm:grid-cols-3 gap-5 sm:gap-0 px-6">
 
@@ -226,7 +216,57 @@
       </div>
     </div>
 
-  
+   
+
+    
+
+    <div class="mt-24 px-4">
+      <p class="text-4xl text-amber-50 w-[500px] font-extrabold sm:ml-[460px]">Meet the Host</p>
+
+  <div class="bg-[#351165] rounded-3xl
+              flex flex-col items-center text-center gap-6 p-6
+              w-[300px] mt-10 
+
+              sm:flex-row sm:text-left sm:items-center sm:gap-10 sm:p-10 sm:w-[1110px] sm:ml-[95px] sm:mt-[80px]">
+
+    <!-- Image -->
+    <img 
+      src="assets/host.png" 
+      alt=""
+      class="w-28 h-28 rounded-full
+
+             sm:w-40 sm:h-40"
+    >
+
+    <!-- Text Content -->
+    <div class="flex flex-col gap-4">
+
+      <h2 class="text-xl font-bold text-amber-50 sm:text-2xl">
+        Alex Kumar
+      </h2>
+
+      <p class="text-amber-50 text-sm sm:text-base max-w-xl">
+        Tech entrepreneur, productivity expert, and lifelong learner.
+        Alex has been in the tech industry for over 10 years, working with
+        startups and Fortune 500 companies. Through TechWave, Alex shares
+        insights from industry leaders and practical advice for anyone
+        looking to grow in tech.
+      </p>
+
+      <!-- Social Icons -->
+      <div class="flex gap-4 mt-2">
+        <img class="w-7 sm:w-8 " src="assets/linkedin.png" alt="">
+        <img class="w-7 sm:w-8" src="assets/x.png" alt="">
+        <img class="w-7 sm:w-8" src="assets/instagram.png" alt="">
+        <img class="w-7 sm:w-8" src="assets/youtube.png" alt="">
+      </div>
+
+    </div>
+
+  </div>
+
+</div>
+
     
   
 
@@ -245,7 +285,45 @@
     </main> 
     
 
-    <footer></footer>
+    <footer class="relative bg-[#1a0b2e] py-12 text-white overflow-hidden text-center">
+  <div class="absolute inset-0 opacity-20 pointer-events-none">
+    <img src="assets/footer-bg.png" alt="" class="w-full h-full object-cover">
+  </div>
+
+  <div class="relative z-10 container mx-auto px-6">
+    
+    <h2 class="font-extrabold text-5xl min-[560px]:text-7xl tracking-tight mb-8">
+      Tech <span class="bg-gradient-to-r from-pink-500 to-purple-500 bg-clip-text text-transparent">wave</span>
+    </h2>
+
+    <div class="flex justify-center mb-10">
+      <ul class="grid grid-cols-2 gap-y-6 gap-x-8 min-[560px]:flex min-[560px]:items-center min-[560px]:gap-10 text-base font-medium text-gray-300">
+        
+        <li class="flex items-center justify-center gap-2 hover:text-white transition cursor-pointer">
+          <i class="fab fa-spotify text-2xl text-white"></i> Spotify
+        </li>
+        
+        <li class="flex items-center justify-center gap-2 hover:text-white transition cursor-pointer">
+          <i class="fab fa-apple text-2xl text-white"></i> Apple Podcasts
+        </li>
+        
+        <li class="flex items-center justify-center gap-2 hover:text-white transition cursor-pointer">
+          <i class="fab fa-youtube text-2xl text-white"></i> YouTube
+        </li>
+        
+        <li class="flex items-center justify-center gap-2 hover:text-white transition cursor-pointer min-[560px]min-[560px]:px-3 min-[560px]:py-1 min-[560px]:rounded">
+          <i class="fab fa-twitter text-2xl text-white"></i> Twitter
+        </li>
+
+      </ul>
+    </div>
+
+    <div class="text-gray-400 text-xs min-[560px]:text-sm mt-12 opacity-80">
+      <p>&copy; 2026 TechWave Podcast. All rights reserved.</p>
+    </div>
+  </div>
+</footer>
+
     
 </body>
 </html>
